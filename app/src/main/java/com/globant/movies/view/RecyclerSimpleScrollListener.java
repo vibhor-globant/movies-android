@@ -1,4 +1,4 @@
-package com.globant.movies;
+package com.globant.movies.view;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -34,7 +34,6 @@ public class RecyclerSimpleScrollListener extends RecyclerView.OnScrollListener 
     }
 
     public Observable<Boolean> getLastVisibleObservable() {
-//        return scrollBus.onBackpressureDrop().distinctUntilChanged().asObservable();
         return scrollBus.onBackpressureDrop().distinctUntilChanged().skip(1).filter(lastVisible -> lastVisible).asObservable();
     }
 }

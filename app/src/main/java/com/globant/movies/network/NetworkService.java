@@ -22,7 +22,7 @@ public enum NetworkService {
 
     public static final String IMDB_POSTER_BASE_URL = "http://image.tmdb.org/t/p/w300";
 
-        private static final String SERVER_BASE_URL = "http://192.168.5.106:3000/";
+        private static final String SERVER_BASE_URL = "http://192.168.5.29:3000/";
 //    private static final String SERVER_BASE_URL = "http://172.19.5.95:3000/";
     private NetworkApi mApis;
 
