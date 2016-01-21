@@ -1,4 +1,4 @@
-package com.globant.mymovies;
+package com.globant.mymovies.model;
 
 import java.util.Date;
 
